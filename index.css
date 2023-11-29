@@ -45,6 +45,42 @@ body{
     background-color: rgb(120, 167, 165);
     box-shadow: 0px 0px 5px rgb(12, 12, 12);
 }
+
+.button p{
+    font-size:30px;
+    color:white;
+}
+
+a:hover{
+    text-decoration: none;
+}
+/* amdin styles */
+
+
+.login-container{
+    box-shadow: 0px 0px 5px black;
+}
+
+.admin-container{
+    height:50vh;
+    display:grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(133, 134, 134);
+    
+    background-color: aliceblue;
+}
+.admin-container .box{
+    display: grid;
+    place-items: center;
+    width:250px;
+    gap:2rem;
+    height:20vh;
+    border-radius: 5px;
+    background-color: rgb(150, 183, 187);
+}
+
 @media screen and (max-width:800px){
     .home-page{
         display: block;
@@ -58,16 +94,14 @@ body{
     .home-page-body-image img{
         width:200px;
     }
-}
-.button p{
-    font-size:30px;
-    color:white;
-}
+    .admin-container{
+        height:fit-content;
+        padding:20px 40px;
+        gap:3rem;
+        width:fit-content;
 
-a:hover{
-    text-decoration: none;
-}
-/* amdin styles */
-.nav-bar-style{
-    background-color: aquamarine;
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+    }
 }
